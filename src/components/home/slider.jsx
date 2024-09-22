@@ -18,7 +18,7 @@ const Slider = () => {
       items: 2, // Show 2 items on tablets
     },
     1000: {
-      items: 3, // Show 3 items on desktops
+      items: 4, // Show 3 items on desktops
     },
   };
 

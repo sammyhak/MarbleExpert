@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/hooks/fadeComponent.scss"; // Make sure this path is correct
 
-const FadeInSection = ({ children }) => {
+const FadeInSection = ({ children, className }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef();
 
@@ -28,7 +28,7 @@ const FadeInSection = ({ children }) => {
   }, [ref.current]);
 
   return (
-    <div ref={ref} className={`fade-in-section ${isVisible && "fade-in"}`}>
+    <div ref={ref} className={`${className} ${isVisible && "fade-in"}`}>
       {children}
     </div>
   );
