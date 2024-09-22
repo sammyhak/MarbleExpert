@@ -1,0 +1,34 @@
+section.services {
+  background: url("../../../assets/bg-img-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;  
+  .container {
+    display: grid;
+
+    .row{
+        .card{
+            border: none;
+            margin-top: 50px;
+            i{
+                font-size: 50px;
+                font-weight: 200;
+                opacity: 80%;
+                color: #e6af5d;
+
+                &.light{
+                    opacity: 20%;
+                    margin-left: auto;
+                    color: unset;
+                }
+            }
+
+            .card-text{
+                font-size: 15px;
+            }
+        }
+    }
+  }
+}

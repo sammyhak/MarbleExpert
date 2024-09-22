@@ -1,0 +1,63 @@
+section.slider {
+  .row {
+    padding: 50px 0;
+    padding-left: 100px;
+
+    .owl-theme {
+      .item {
+        position: relative; /* Position relative for the overlay */
+        overflow: hidden; /* Hide overflow for the overlay */
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+
+        &:hover{
+            transition: 2s all ease;
+            img{
+                object-fit: fill;                
+            }
+        }
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      color: white; /* Text color */
+      display: flex;      
+      opacity: 0; /* Hide overlay by default */
+      transition: opacity 0.9s; /* Smooth transition */
+      padding: 20px;
+      .btn{
+        display: flex;
+        margin-left: auto;
+      }
+    }
+
+    .item:hover .overlay {      
+      opacity: 1; /* Show overlay on hover */
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.slider {
+    .row {
+      margin: 20px 0;
+      padding-left: 10px;
+
+      .owl-theme {
+        .item {
+          img {
+          }
+        }
+      }
+    }
+  }
+}
