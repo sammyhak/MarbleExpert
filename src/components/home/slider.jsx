@@ -41,17 +41,7 @@ const Slider = () => {
           margin={10}
           responsive={responsivity}
           nav
-        >
-          <div class="item">
-            <img src={img1} alt="marble" />
-            <div className="overlay">
-              <button className="btn primary__btn">
-                <div>
-                  GALLERY <img src={arrowRightWhite} alt="" />
-                </div>
-              </button>
-            </div>
-          </div>
+        >          
           <div class="item">
             <img src={img2} alt="marble" />
             <div className="overlay">

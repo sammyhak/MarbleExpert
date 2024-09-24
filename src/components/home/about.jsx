@@ -23,27 +23,7 @@ const About = () => {
   const SectionContent = () => {
     return (
       <div className="row d-flex justify-content-center">
-        {CardData.map((card, index) => {
-          return (
-            <div className="col-lg-4 col-md-6 mt-4" key={index}>
-              <div className="card p-4">
-                <div className="d-flex">
-                  {card.icon1}
-                  {card.icon2}
-                </div>
-
-                <div className="card-title">
-                  <h3>{card.title}</h3>
-                </div>
-
-                <div className="card-text">
-                  <p className="mt-4">{card.text}</p>
-                </div>
-                <hr />
-              </div>
-            </div>
-          );
-        })}
+        
       </div>
     );
   };

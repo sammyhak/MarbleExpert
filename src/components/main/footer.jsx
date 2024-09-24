@@ -53,11 +53,11 @@ const Footer = () => {
               </div>
 
               <div className="link mt-4 mt">
-                <i className="fi-br-phone-call"></i> 08068069108 , 08056897455
+                <i className="fi-br-phone-call"></i> 08068069108, 08056897455, 07086191521
               </div>
 
               <div className="link">
-                <i className="fi-br-envelope"></i> info@marble.com
+                <i className="fi-br-envelope"></i> marbleexperttreatltd@gmail.com
               </div>
             </div>
           </div>
