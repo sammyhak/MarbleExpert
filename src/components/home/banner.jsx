@@ -21,7 +21,7 @@ const HomeBanner = () => {
 
           <div className="quick__buttons mt-4">
             <button className="btn btn__primary">
-              Our Services <img src={arrowRight} alt="arrow-right" />
+              Our Gallery <img src={arrowRight} alt="arrow-right" />
             </button>
             <button className="btn btn__secondary">
               Get in Touch <img src={arrowRightWhite} alt="" />

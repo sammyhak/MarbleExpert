@@ -1,0 +1,42 @@
+.generalBanner {
+  position: relative;
+  background: url("../../../assets/bannerImg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333;
+    opacity: 0.4;
+  }
+  .container {
+    .content {
+      width: 100%;
+      height: 350px;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      opacity: 100%;
+      font-weight: 800;
+      z-index: 10;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .generalBanner {
+    height: 200px;
+    .container {
+      .content {
+        height: 200px;
+      }
+    }
+  }
+}

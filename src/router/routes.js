@@ -1,3 +1,4 @@
+import About from "../pages/about";
 import Home from "../pages/home";
 
 export default function RoutesMain() {
@@ -14,7 +15,7 @@ export default function RoutesMain() {
     },
     {
       path: "/about",
-      component: Home,
+      component: About,
       name: "ABOUT US",
     },
     {

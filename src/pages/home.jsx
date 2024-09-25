@@ -4,6 +4,7 @@ import HomeBanner from "../components/home/banner";
 import Services from "../components/home/services";
 import About from "../components/home/about";
 import Slider from "../components/home/slider";
+import VideoSection from "../components/home/video";
 
 const Home = () => {
   const { setSeoData } = useSEO();
@@ -24,6 +25,7 @@ const Home = () => {
       <Services />
       <About />
       <Slider />
+      <VideoSection />
     </>
   );
 };
