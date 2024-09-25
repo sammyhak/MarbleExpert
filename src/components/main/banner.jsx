@@ -5,7 +5,7 @@ const GeneralBanner = ({title}) => {
         <section className="generalBanner">
             <div className="container">
                 <div className="content d-flex justify-content-center align-items-center">
-                    <h1>About Us</h1>
+                    <h1>{title}</h1>
                 </div>
             </div>
         </section>

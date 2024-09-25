@@ -1,5 +1,7 @@
 import About from "../pages/about";
+import Contact from "../pages/contact";
 import Home from "../pages/home";
+import ServicesPage from "../pages/services";
 
 export default function RoutesMain() {
   return [
@@ -10,7 +12,7 @@ export default function RoutesMain() {
     },
     {
       path: "/services",
-      component: Home,
+      component: ServicesPage,
       name: "OUR SERVICES",
     },
     {
@@ -20,7 +22,7 @@ export default function RoutesMain() {
     },
     {
       path: "/contact",
-      component: Home,
+      component: Contact,
       name: "CONTACT",
     },
   ];

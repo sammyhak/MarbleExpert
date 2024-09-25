@@ -1,7 +1,7 @@
-import AboutMarble from "../components/about/about";
 import Services from "../components/home/services";
 import GeneralBanner from "../components/main/banner";
-const About = () => {
+
+const ServicesPage = () => {
   const CardData = [
     {
       title: "Premium Natural Stone Solutions",
@@ -24,11 +24,10 @@ const About = () => {
   ];
   return (
     <>
-      <GeneralBanner title={"About Us"} />
-      <AboutMarble />
+      <GeneralBanner title={"Our Services"} />
       <Services CardData={CardData}/>
     </>
   );
 };
 
-export default About;
+export default ServicesPage;
