@@ -1,5 +1,6 @@
 import About from "../pages/about";
 import Contact from "../pages/contact";
+import Gallery from "../pages/gallery";
 import Home from "../pages/home";
 import ServicesPage from "../pages/services";
 
@@ -24,6 +25,11 @@ export default function RoutesMain() {
       path: "/contact",
       component: Contact,
       name: "CONTACT",
+    },
+    {
+      path: "/gallery",
+      component: Gallery,
+      name: null      
     },
   ];
 }

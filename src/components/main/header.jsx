@@ -12,7 +12,7 @@ const Header = () => {
   const scrollToElement = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -26,17 +26,28 @@ const Header = () => {
         <div className="navbar d-flex">
           {routes.map((route) => {
             return (
-              <span
-                key={route.path}
-                className={currentPage.pathname === route.path ? "active" : ""}
-              >
-                <Link to={route.path}> {route.name} </Link>
-              </span>
+              <>
+                {route.name && (
+                  <span
+                    key={route.path}
+                    className={
+                      currentPage.pathname === route.path ? "active" : ""
+                    }
+                  >
+                    <Link to={route.path}> {route.name} </Link>
+                  </span>
+                )}
+              </>
             );
           })}
 
-          <button className="btn secondary__btn" onClick={() => scrollToElement("contact")}>
-            <div>Get Quote <img src={arrowRightWhite} alt="" /></div>
+          <button
+            className="btn secondary__btn"
+            onClick={() => scrollToElement("contact")}
+          >
+            <div>
+              Get Quote <img src={arrowRightWhite} alt="" />
+            </div>
           </button>
         </div>
       </div>

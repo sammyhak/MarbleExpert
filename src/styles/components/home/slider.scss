@@ -37,10 +37,12 @@ section.slider {
       opacity: 0; /* Hide overlay by default */
       transition: opacity 0.9s; /* Smooth transition */
       padding: 20px;
-      .btn {
+      a{
+        text-decoration: none;
+        color: unset;
         display: flex;
         margin-left: auto;
-      }
+      }      
     }
 
     .item:hover .overlay {

@@ -8,6 +8,7 @@ import img5 from "../../assets/img5.jpg";
 import img6 from "../../assets/img6.jpg";
 import img7 from "../../assets/img7.jpg";
 import arrowRightWhite from "../../assets/arrow-right-white.svg";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   const responsivity = {
@@ -41,65 +42,77 @@ const Slider = () => {
           margin={10}
           responsive={responsivity}
           nav
-        >          
+        >
           <div class="item">
             <img src={img2} alt="marble" />
             <div className="overlay">
-              <button className="btn primary__btn">
-                <div>
-                  GALLERY <img src={arrowRightWhite} alt="" />
-                </div>
-              </button>
+              <Link to="/gallery">
+                <button className="btn primary__btn">
+                  <div>
+                    GALLERY <img src={arrowRightWhite} alt="" />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="item">
             <img src={img3} alt="marble" />
             <div className="overlay">
-              <button className="btn primary__btn">
-                <div>
-                  GALLERY <img src={arrowRightWhite} alt="" />
-                </div>
-              </button>
+              <Link to="/gallery">
+                <button className="btn primary__btn">
+                  <div>
+                    GALLERY <img src={arrowRightWhite} alt="" />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="item">
             <img src={img4} alt="marble" />
             <div className="overlay">
-              <button className="btn primary__btn">
-                <div>
-                  GALLERY <img src={arrowRightWhite} alt="" />
-                </div>
-              </button>
+              <Link to="/gallery">
+                <button className="btn primary__btn">
+                  <div>
+                    GALLERY <img src={arrowRightWhite} alt="" />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="item">
             <img src={img5} alt="marble" />
             <div className="overlay">
-              <button className="btn primary__btn">
-                <div>
-                  GALLERY <img src={arrowRightWhite} alt="" />
-                </div>
-              </button>
+              <Link to="/gallery">
+                <button className="btn primary__btn">
+                  <div>
+                    GALLERY <img src={arrowRightWhite} alt="" />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="item">
             <img src={img6} alt="marble" />
             <div className="overlay">
-              <button className="btn primary__btn">
-                <div>
-                  GALLERY <img src={arrowRightWhite} alt="" />
-                </div>
-              </button>
+              <Link to="/gallery">
+                <button className="btn primary__btn">
+                  <div>
+                    GALLERY <img src={arrowRightWhite} alt="" />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="item">
             <img src={img7} alt="marble" />
             <div className="overlay">
-              <button className="btn primary__btn">
-                <div>
-                  GALLERY <img src={arrowRightWhite} alt="" />
-                </div>
-              </button>
+              <Link to="/gallery">
+                <button className="btn primary__btn">
+                  <div>
+                    GALLERY <img src={arrowRightWhite} alt="" />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
         </OwlCarousel>
