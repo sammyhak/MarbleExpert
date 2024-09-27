@@ -1,10 +1,24 @@
+import { useEffect } from "react";
 import Services from "../components/home/services";
 import Slider from "../components/home/slider";
 import GeneralBanner from "../components/main/banner";
 import Form from "../components/main/form";
+import { useSEO } from "../contexts/SEOcontext";
 import FadeInSection from "../hooks/fadeComponent";
 
 const ServicesPage = () => {
+  const { setSeoData } = useSEO();
+
+  useEffect(() => {
+    setSeoData({
+      title: "Marble Expert Treat Limited - Services",
+      description:
+        "Marble Expert Treat Ltd is a natural stone restoration company in Lagos, offering installation and maintenance of granite and marble across Nigeria.",
+      keywords:
+        "Services, Services Page, Marble, Rock, Rocks, natural, stone, restoration, expert, lagos, granite, Nigeria, marble rocks",
+    });
+  }, [setSeoData]);
+
   const CardData = [
     {
       title: "Premium Natural Stone Solutions",
