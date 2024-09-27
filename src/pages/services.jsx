@@ -1,6 +1,8 @@
 import Services from "../components/home/services";
 import Slider from "../components/home/slider";
 import GeneralBanner from "../components/main/banner";
+import Form from "../components/main/form";
+import FadeInSection from "../hooks/fadeComponent";
 
 const ServicesPage = () => {
   const CardData = [
@@ -28,6 +30,16 @@ const ServicesPage = () => {
       <GeneralBanner title={"Our Services"} />
       <Services CardData={CardData}/>
       <Slider />
+      <FadeInSection
+        className={"fade-in-left-section"}
+        children={
+          <Form
+            textline={"APPOINTMENT"}
+            title={"Get A Free Quote"}
+            subtitle={"Please feel free to get in touch using the form below."}
+          />
+        }
+      />
     </>
   );
 };

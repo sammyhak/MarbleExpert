@@ -8,6 +8,7 @@ import { SEOProvider } from "./contexts/SEOcontext";
 import SEOManager from "./contexts/SEPmanager";
 import Header from "./components/main/header";
 import Footer from "./components/main/footer";
+import ScrollToTop from "./hooks/scrollTop";
 
 function App() {
   const [routes] = useState(RoutesMain());
@@ -17,6 +18,7 @@ function App() {
       <SEOProvider>
         <SEOManager />
         <Router>
+          <ScrollToTop />    
           <Header />
           <Routes>
             {routes.map((route, index) => (

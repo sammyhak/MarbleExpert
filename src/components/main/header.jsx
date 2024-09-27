@@ -9,6 +9,13 @@ const Header = () => {
 
   const currentPage = useLocation();
 
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section className="header">
       <div className="container d-flex justify-content-between w-100 p-4">
@@ -28,7 +35,7 @@ const Header = () => {
             );
           })}
 
-          <button className="btn secondary__btn">
+          <button className="btn secondary__btn" onClick={() => scrollToElement("contact")}>
             <div>Get Quote <img src={arrowRightWhite} alt="" /></div>
           </button>
         </div>

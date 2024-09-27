@@ -12,9 +12,7 @@ const About = () => {
           <h1 className="section__title secondary-color">
             At Marble Expert Treat Limited, we deliver top-quality marble care
             solutions that exceed expectations.
-          </h1>
-          <p>At Marble Expert Treat Limited, we focus on:</p>
-          <hr />
+          </h1>          
         </div>
       </>
     );
@@ -35,16 +33,13 @@ const About = () => {
         </div>
 
         <div className="col-md-6">
-          <div className="container">
+          <div className="container h-100">
+            <div className="d-flex align-items-center h-100">
             <FadeInSection
               children={<SectionHeader />}
               className={"fade-in-right-section"}
-            />
-            <div className="row">
-              <div className="col-md-6"></div>
-
-              <div className="col-md-6"></div>
-            </div>
+            /> 
+            </div>           
           </div>
         </div>
       </div>

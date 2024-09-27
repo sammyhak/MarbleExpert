@@ -2,7 +2,7 @@ import "../../styles/components/main/form.scss";
 
 const Form = ({ textline, subtitle, title }) => {
   return (
-    <section className="form">
+    <section className="form" id="contact">
       <div className="container">
         <div className="section__header">
           <div className="text-line">

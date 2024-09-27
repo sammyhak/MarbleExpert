@@ -2,6 +2,7 @@ import "../../styles/components/home/banner.scss";
 import bgVideo from "../../assets/Stone-Collection-exposure-boost-hero.mp4";
 import arrowRight from "../../assets/arrow-right.svg";
 import arrowRightWhite from "../../assets/arrow-right-white.svg";
+import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
   return (
@@ -21,10 +22,10 @@ const HomeBanner = () => {
 
           <div className="quick__buttons mt-4">
             <button className="btn btn__primary">
-              Our Gallery <img src={arrowRight} alt="arrow-right" />
+              <Link to='/gallery'> Our Gallery <img src={arrowRight} alt="arrow-right" /></Link>
             </button>
             <button className="btn btn__secondary">
-              Get in Touch <img src={arrowRightWhite} alt="" />
+              <Link to="/contact">Get in Touch <img src={arrowRightWhite} alt="" /></Link>
             </button>
           </div>
         </div>
