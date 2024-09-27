@@ -6,4 +6,34 @@ section.contact {
       object-fit: cover;
     }
   }
+
+  .content {
+    .items {
+      .item {
+        .two {
+          width: 100%;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.contact {
+    .content {
+      .items {
+        .item {
+          .two {
+            h3{
+                font-size: 14px;
+            }
+            p{
+                font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

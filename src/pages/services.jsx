@@ -1,4 +1,5 @@
 import Services from "../components/home/services";
+import Slider from "../components/home/slider";
 import GeneralBanner from "../components/main/banner";
 
 const ServicesPage = () => {
@@ -26,6 +27,7 @@ const ServicesPage = () => {
     <>
       <GeneralBanner title={"Our Services"} />
       <Services CardData={CardData}/>
+      <Slider />
     </>
   );
 };

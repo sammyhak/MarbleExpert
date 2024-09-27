@@ -1,6 +1,7 @@
 import AboutMarble from "../components/about/about";
 import Services from "../components/home/services";
 import GeneralBanner from "../components/main/banner";
+import Form from "../components/main/form";
 const About = () => {
   const CardData = [
     {
@@ -26,7 +27,14 @@ const About = () => {
     <>
       <GeneralBanner title={"About Us"} />
       <AboutMarble />
-      <Services CardData={CardData}/>
+      <Services CardData={CardData} />
+      <Form
+        textline={"APPOINTMENT"}
+        title={"Get A Free Quote"}
+        subtitle={
+          "Please feel free to get in touch using the form below."
+        }
+      />
     </>
   );
 };

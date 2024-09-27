@@ -367,7 +367,7 @@ section {
 /*===== Background & Text color =====*/
 
 .pq-bg-dark {
-	background-color: var(--dark-color);
+	background-color: #30373f;
 }
 
 .pq-bg-white {
@@ -6599,7 +6599,7 @@ Custom Css
 }
 
 .form-section .pq-button {
-	background: var(--primary-color);
+	background: #e6af5d;
 }
 
 .form-section .pq-button:hover {
