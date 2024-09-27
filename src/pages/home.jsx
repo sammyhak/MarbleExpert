@@ -6,6 +6,7 @@ import About from "../components/home/about";
 import Slider from "../components/home/slider";
 import VideoSection from "../components/home/video";
 import Form from "../components/main/form";
+import FadeInSection from "../hooks/fadeComponent";
 
 const Home = () => {
   const { setSeoData } = useSEO();
@@ -46,13 +47,19 @@ const Home = () => {
       <HomeBanner />
       <Services CardData={CardData} />
       <About />
-      <Slider />
-      <VideoSection />
-      <Form
-        textline={"CONTACT US"}
-        title={"How Can We Help You ?"}
-        subtitle={
-          "Please feel free to get in touch using the form below. We’d love to hear for you."
+      <FadeInSection children={<Slider />} className={"fade-in-top-section"} />
+      <FadeInSection
+        children={<VideoSection />}
+        className={"fade-in-top-section"}
+      />
+      <FadeInSection
+        className={"fade-in-left-section"}
+        children={
+          <Form
+            textline={"APPOINTMENT"}
+            title={"Get A Free Quote"}
+            subtitle={"Please feel free to get in touch using the form below."}
+          />
         }
       />
     </>

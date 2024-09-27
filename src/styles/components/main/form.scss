@@ -55,24 +55,25 @@ section.form {
         font-size: 12px;
       }
       h1{
-        font-size: 18px;
+        font-size: 20px;
       };
       p {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
 
     .row {
         div {     
-            &.submit-button{
-                display: flex;
-                justify-content: start;
+            &.submit-button{                
                 margin: 0 auto;
                 min-height: unset;
+                .btn{
+                    font-size: 14px;
+                }
             }    
           input,
           textarea::placeholder {
-            font-size: 11px;
+            font-size: 12px;
           }
         }
     }
