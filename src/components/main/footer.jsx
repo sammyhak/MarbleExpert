@@ -36,6 +36,12 @@ const Footer = () => {
 
             <div className="links">
               <div className="link">
+                <Link to="/gallery">Gallery</Link>
+              </div>
+            </div>
+
+            <div className="links">
+              <div className="link">
                 <Link to="/contact">Contact</Link>
               </div>
             </div>

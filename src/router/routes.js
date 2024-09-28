@@ -22,14 +22,14 @@ export default function RoutesMain() {
       name: "ABOUT US",
     },
     {
+      path: "/gallery",
+      component: Gallery,
+      name: "GALLERY"      
+    },
+    {
       path: "/contact",
       component: Contact,
       name: "CONTACT",
-    },
-    {
-      path: "/gallery",
-      component: Gallery,
-      name: null      
-    },
+    },    
   ];
 }
