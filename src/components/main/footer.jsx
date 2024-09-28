@@ -74,24 +74,20 @@ const Footer = () => {
             </div>
 
             <div className="links d-flex">
-              <div className="link mr-2">
-                <i className="fi-brands-instagram"></i>{" "}
-                <a href="https://www.instagram.com"></a>
+              <div className="link mr-2">                
+                <Link to="https://www.instagram.com"><i className="fi-brands-instagram"></i>{" "}</Link>
               </div>
 
-              <div className="link mr-2">
-                <i className="fi-brands-facebook"></i>{" "}
-                <a href="https://www.facebook.com"></a>
+              <div className="link mr-2">                
+                <Link to="https://www.facebook.com/profile.php?id=61566788061494"><i className="fi-brands-facebook"></i>{" "}</Link>
               </div>
 
-              <div className="link mr-2">
-                <i className="fi-brands-twitter"></i>{" "}
-                <a href="https://www.twitter.com"></a>
+              <div className="link mr-2">                
+                <Link to="https://www.twitter.com"><i className="fi-brands-twitter"></i>{" "}</Link>
               </div>
 
-              <div className="link mr-2">
-                <i className="fi-brands-whatsapp"></i>{" "}
-                <a href="https://www.whatsapp.com"></a>
+              <div className="link mr-2">                
+                <Link to="https://www.whatsapp.com"><i className="fi-brands-whatsapp"></i>{" "}</Link>
               </div>
             </div>
           </div>
