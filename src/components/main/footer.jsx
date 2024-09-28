@@ -87,7 +87,7 @@ const Footer = () => {
               </div>
 
               <div className="link mr-2">                
-                <Link to="https://www.whatsapp.com"><i className="fi-brands-whatsapp"></i>{" "}</Link>
+                <Link to="https://wa.me/+2347086191521?text=Hello!%20I%20would%20like%20more%20information."><i className="fi-brands-whatsapp"></i>{" "}</Link>
               </div>
             </div>
           </div>
