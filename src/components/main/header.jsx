@@ -55,7 +55,7 @@ const Header = () => {
             </button>
           </div>
           {/* mobile nav icon */}
-          <div className="btn-mobile">
+          <div className="btn-mobile d-block d-lg-none">
             <i
               className="fas fa-bars"
               onClick={() => setVisibility(!visibility)}
