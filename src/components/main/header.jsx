@@ -76,6 +76,7 @@ const Header = () => {
                       className={
                         currentPage.pathname === route.path ? "active" : ""
                       }
+                      onClick={() => setVisibility(!visibility)}
                     >
                       <Link to={route.path}> {route.name} </Link>
                     </span>
